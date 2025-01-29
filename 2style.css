@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff; /* White background for the container */
+    border: 2px solid #4CAF50; /* Green border for the container */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+}
+
+h1 {
+    color: #4CAF50; /* Green color for heading */
+}
+
+form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e6ffe6; /* Light green background for the form */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input {
+    background-color: #e0f7fa; /* Light cyan background for inputs */
+    color: #00796b;
+}
+
+button {
+    background-color: #007bff; /* Blue background for button */
+    color: white;
+    cursor: pointer;
+    border: 2px solid #0056b3; /* Dark blue border for button */
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #ffeb3b; /* Yellow text on hover */
+}
+
+#transactions {
+    margin: 20px 0;
+    color: #333;
+}
+
+.transaction-box {
+    background-color: #e6f7ff; /* Light blue background for transaction box */
+    border: 1px solid #007bff; /* Blue border for transaction box */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    color: #004d40; /* Dark teal text for transaction box */
+}
+
+.related-content {
+    background-color: #fffbe6; /* Light yellow background for related content */
+    border: 1px solid #ffeb3b; /* Yellow border for related content */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    color: #ff9800; /* Orange text for related content */
+}
+
+.related-content h2 {
+    color: #ff5722; /* Red-orange color for related content heading */
+}

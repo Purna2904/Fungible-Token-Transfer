@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Transfer</title>
+    <link rel="stylesheet" href="2style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fungible Token Transfer</h1>
+        <form id="transfer-form">
+            <input type="text" id="sender" placeholder="Sender Account" required>
+            <input type="text" id="receiver" placeholder="Receiver Account" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <button type="submit">Transfer Tokens</button>
+        </form>
+        <div id="transactions"></div>
+    </div>
+    <script>
+        document.getElementById('transfer-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const sender = document.getElementById('sender').value;
+            const receiver = document.getElementById('receiver').value;
+            const amount = document.getElementById('amount').value;
+
+            const transaction = { sender, receiver, amount };
+
+            const transactionsDiv = document.getElementById('transactions');
+            const transactionDiv = document.createElement('div');
+            transactionDiv.className = 'transaction-box';
+            transactionDiv.innerHTML = `<strong>${sender}</strong> sent <strong>${amount}</strong> tokens to <strong>${receiver}</strong>`;
+            transactionsDiv.appendChild(transactionDiv);
+
+            alert('Token transfer successful!');
+        });
+    </script>
+</body>
+</html>
